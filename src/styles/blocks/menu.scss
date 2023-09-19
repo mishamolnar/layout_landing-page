@@ -11,6 +11,10 @@
 
   &__top {
     margin-bottom: 24px;
+
+    @include onTablet {
+      margin-bottom: 4px;
+    }
   }
 
   &__phone-number {
@@ -23,7 +27,7 @@
   }
 
   &__book-test-drive {
-    color: var(--menu-color);
+    color: $menu-text-color;
     text-decoration: none;
     display: block;
     font-size: 12px;
