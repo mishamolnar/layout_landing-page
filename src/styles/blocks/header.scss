@@ -1,0 +1,30 @@
+.header {
+  background-image: url(../image/header-bg-mogile.png);
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1.5px;
+  }
+
+  &_bottom {
+    padding-bottom: 40px;
+    @include contentPaddingInline;
+  }
+}
