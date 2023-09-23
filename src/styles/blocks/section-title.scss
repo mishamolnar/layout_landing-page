@@ -1,0 +1,24 @@
+.section-title {
+  color: $main-text-color;
+  text-align: center;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  text-transform: capitalize;
+  margin-bottom: 48px;
+
+  @include onTablet {
+    font-size: 48px;
+  }
+
+  @include onDesktop {
+    font-size: 64px;
+    margin-bottom: 56px;
+  }
+
+  &--align-left {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+}
