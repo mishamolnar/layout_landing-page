@@ -41,8 +41,4 @@
   &__nav {
     margin-bottom: 40px;
   }
-
-  &__content {
-    @include contentPaddingInline;
-  }
 }
