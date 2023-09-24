@@ -1,0 +1,30 @@
+
+.form {
+  &__field {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid transparent;
+    transition: all $transition-time;
+
+    &--short {
+      height: 48px;
+      border-radius: 40px;
+      margin-bottom: 16px;
+      padding-inline: 16px;
+    }
+
+    &--long {
+      border-radius: 16px;
+      height: 120px;
+      padding: 14px 16px;
+      background: $white-secondary-accent;
+      margin-bottom: 32px;
+    }
+
+    &:hover::placeholder {
+      color: $black-secondary-accent;
+    }
+  }
+}
