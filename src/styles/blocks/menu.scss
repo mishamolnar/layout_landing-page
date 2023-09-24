@@ -2,15 +2,19 @@
   height: 100vh;
   box-sizing: border-box;
   background-color: #c2c2c2;
-  color: $menu-text-color;
+  color: $black-main-accent;
   opacity: 0;
   pointer-events: none;
 
   text-transform: uppercase;
   font-weight: 600;
+  overflow: auto; /* to scroll the menu if needed */
+  z-index: 1;
 
   &__top {
     margin-bottom: 24px;
+    position: sticky; /* to keep cross always visible */
+    top: 0;
 
     @include onTablet {
       margin-bottom: 4px;
@@ -27,7 +31,7 @@
   }
 
   &__book-test-drive {
-    color: $menu-text-color;
+    color: $black-main-accent;
     text-decoration: none;
     display: block;
     font-size: 12px;

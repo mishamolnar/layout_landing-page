@@ -7,6 +7,22 @@
       row-gap: 48px;
     }
   }
+
+  &__explore {
+    @include pageGrid;
+  }
+}
+
+.explore-container {
+  grid-column: 1 / -1;
+
+  @include onTablet {
+    grid-column: 2 / -2;
+  }
+
+  @include onDesktop {
+    grid-column: 5 / -5;
+  }
 }
 
 .detail {
@@ -25,6 +41,7 @@
 
   &__link {
     position: relative;
+    transition: all $transition-time;
 
     &--wide {
       @include onTablet {
@@ -46,6 +63,10 @@
       @include onDesktop {
         grid-column: span 4;
       }
+    }
+
+    &:hover {
+      scale: 1.1;
     }
   }
 
